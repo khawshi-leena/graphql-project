@@ -58,8 +58,17 @@
 		<dependency>
     		<groupId>com.netflix.graphql.dgs</groupId>
     		<artifactId>graphql-dgs-spring-boot-starter</artifactId>
-    		<version>4.9.16</version>
+    		<version>5.5.3</version>
 		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/com.graphql-java/graphql-java -->
+		<dependency>
+    		<groupId>com.graphql-java</groupId>
+    		<artifactId>graphql-java</artifactId>
+    		<version>19.5</version>
+		</dependency>
+		
+		
 	</dependencies>
 
 	<build>

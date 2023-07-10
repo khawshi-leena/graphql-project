@@ -1,5 +1,3 @@
-
-
 type Query{
 	allBooks:[Book]
 	getBook(bookId:Int):Book
@@ -20,5 +18,3 @@ type Author{
  	authorName:String
  	contactNo:Int
 }
-
-

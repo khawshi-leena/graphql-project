@@ -16,20 +16,19 @@ import lombok.ToString;
 
 
 @Entity
-@Table(name = "author_details")
 @Getter
 @Setter
-@ToString
-@AllArgsConstructor
-@NoArgsConstructor
 public class Author {
 	
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 	int id;
+	
 	@ManyToOne
-	@JoinColumn(name = "author_id")
+	@JoinColumn(name = "book_id")
 	Book book;
+	
 	String authorName;
+	
 	int contactNo;
 }
