@@ -11,4 +11,6 @@ import com.graphql.example.model.Author;
 public interface AuthorRepository extends JpaRepository<Author, Integer> {
 
 		public List<Author> findAuthorByBook_Id(int id);
+
+		public List<Author> findAuthorsByBook_IdIn(List<Integer> bookIds);
 	}

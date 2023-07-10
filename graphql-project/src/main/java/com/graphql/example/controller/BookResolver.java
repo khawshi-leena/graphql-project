@@ -32,13 +32,13 @@ public class BookResolver {
     	return bookService.getAll(); 
 	}
 	
-	@DgsData(parentType = "Book", field = "authors")
+	/*@DgsData(parentType = "Book", field = "authors")
 	public List<Author> authors(DgsDataFetchingEnvironment dfe) {
 		Book book = dfe.getSource();
 		List<Author> authors = new ArrayList<Author>();
 	   	authors = authorService.getAuthors(book.getId());
 	   	return authors;
-	}
+	}*/
 	  
 	@DgsQuery 
 	 public Book getBook(@InputArgument int bookId) { 
