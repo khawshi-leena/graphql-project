@@ -21,10 +21,10 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
-		<dependency>
+		<!--<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-graphql</artifactId>
-		</dependency>
+		</dependency>-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -50,11 +50,25 @@
 			<artifactId>spring-webflux</artifactId>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
+		<!--<dependency>
 			<groupId>org.springframework.graphql</groupId>
 			<artifactId>spring-graphql-test</artifactId>
 			<scope>test</scope>
+		</dependency>-->
+		<dependency>
+    		<groupId>com.netflix.graphql.dgs</groupId>
+    		<artifactId>graphql-dgs-spring-boot-starter</artifactId>
+    		<version>5.5.3</version>
 		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/com.graphql-java/graphql-java -->
+		<dependency>
+    		<groupId>com.graphql-java</groupId>
+    		<artifactId>graphql-java</artifactId>
+    		<version>19.5</version>
+		</dependency>
+		
+		
 	</dependencies>
 
 	<build>
